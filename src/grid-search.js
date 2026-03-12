@@ -35,7 +35,7 @@ exports.createApiCallsByCategory = (points, { apiKey, latitude, longitude, radiu
     const apiRequests = [];
     // if input.categories array not specified use official Api Types or *
     // type=* should be used instead keyword=* since * as keyword or name is deprecated and will be shut down by March 2023
-    let addCategories = useOfficialApiTypes ? placeTypes : ['*'];
+    let addCategories = useOfficialApiTypes ? placeTypes : ['restaurant'];
     if (categories?.length) {
         addCategories = categories;
     }
