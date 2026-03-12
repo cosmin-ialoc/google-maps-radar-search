@@ -17,7 +17,7 @@ const initRootSquare = async ({ latitude, longitude, radiusMeters, apiKey }) => 
     log.debug(`longitude ${longitude} ${(bbox[2] + bbox[0]) / 2}`);
     log.debug(`latitude ${latitude} ${(bbox[3] + bbox[1]) / 2}`);
     return [{
-        url: `${baseUrl}?&location=${latitude}%2C${longitude}&rankby=distance&key=${apiKey}&type=*`,
+        url: `${baseUrl}?&location=${latitude}%2C${longitude}&rankby=distance&key=${apiKey}&type=restaurant`,
         userData: {
             category: '*', // wildcard search enforced
             latitude,
